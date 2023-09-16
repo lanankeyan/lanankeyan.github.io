@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>bulma cards</title>
+    <title>蓝桉科研</title>
     <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon.png">
     <!-- Bulma Version 0.9.4-->
     <link rel='stylesheet' href='https://unpkg.com/bulma@0.9.4/css/bulma.min.css'>
@@ -15,9 +15,7 @@
 <body>
     <nav class="navbar">
         <div class="container">
-            <div class="navbar-brand"><a class="navbar-item" href="index.html"><img
-                        src="images/lanankeyan.png"
-                        /></a>
+            <div class="navbar-brand"><a class="navbar-item" href="index.html"><img src="images/lanankeyan.png" /></a>
                 <div class="navbar-burger burger" data-target="navMenu"><span></span><span></span><span></span></div>
             </div>
             <div class="navbar-menu" id="navMenu">
@@ -33,7 +31,7 @@
 
                     <a class="navbar-item" href="core.html">
                         核心优势
-                    </a> 
+                    </a>
 
                     <!-- <a class="navbar-item" href="research.html">
                         科研项目
@@ -189,7 +187,8 @@
                 <div class="card-content">
                     <div class="content has-text-centered is-size-4 has-text-weight-bold">留学申请辅导</div>
                     <div class="content has-text-centered">
-                        蓝桉科研将为留学生提供香港，新加坡，英国，加拿大，澳洲等国家的留学申请指导和辅导服务。我们的专业团队将为客户提供面试准备、简历优化、个人陈述撰写等方面的支持，以增加他们在竞争激烈的招聘过程中的成功机会。                    </div>
+                        蓝桉科研将为留学生提供香港，新加坡，英国，加拿大，澳洲等国家的留学申请指导和辅导服务。我们的专业团队将为客户提供面试准备、简历优化、个人陈述撰写等方面的支持，以增加他们在竞争激烈的招聘过程中的成功机会。
+                    </div>
                 </div>
             </div>
 
@@ -205,12 +204,12 @@
                 <div class="card-content">
                     <div class="content has-text-centered is-size-4 has-text-weight-bold">考研辅导</div>
                     <div class="content has-text-centered">
-                        蓝桉科研提供个性化的考研辅导服务，涵盖考研院校的选取、考研课程的辅导以及考研导师的推荐。我们全方位支持您，帮助您顺利完成考研考试。                    </div>
+                        蓝桉科研提供个性化的考研辅导服务，涵盖考研院校的选取、考研课程的辅导以及考研导师的推荐。我们全方位支持您，帮助您顺利完成考研考试。 </div>
                 </div>
             </div>
 
 
-           
+
         </div>
 
     </section>
@@ -371,11 +370,11 @@
                 </div>
                 <div class="swiper-pagination mt-6"></div>
             </div>
-            
+
         </div>
-<div class="is-flex is-align-items-center is-flex-direction-column">
-                <a class="button is-warning is-rounded has-text-blue" href="cases.html">更多案例</a>
-            </div>
+        <div class="is-flex is-align-items-center is-flex-direction-column">
+            <a class="button is-warning is-rounded has-text-blue" href="cases.html">更多案例</a>
+        </div>
 
 
     </section>
@@ -538,6 +537,28 @@
             clickable: true,
         },
     });
+
+    document.addEventListener('DOMContentLoaded', () => {
+
+        // Get all "navbar-burger" elements
+        const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+        // Add a click event on each of them
+        $navbarBurgers.forEach(el => {
+            el.addEventListener('click', () => {
+
+                // Get the target from the "data-target" attribute
+                const target = el.dataset.target;
+                const $target = document.getElementById(target);
+
+                // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+                el.classList.toggle('is-active');
+                $target.classList.toggle('is-active');
+
+            });
+        });
+
+    });
 </script>
 <style>
     .mt-8 {
@@ -607,6 +628,13 @@
         /* border-bottom: 1px solid lightgray; */
     }
 
+
+    .navbar-menu {
+
+        background-color: #1e55c8;
+
+    }
+
     .navbar .navbar-item,
     .navbar-link {
         color: white;
@@ -616,6 +644,9 @@
         color: black;
     } */
 
+    .navbar-burger {
+        color: white;
+    }
 
     .success-cases {
         height: 400px;
