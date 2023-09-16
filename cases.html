@@ -15,9 +15,8 @@
 <body>
     <nav class="navbar">
         <div class="container">
-            <div class="navbar-brand"><a class="navbar-item" href="../"><img
-                        src="http://www.lasyzx.top/uploadfile/2023/0128/20230128103815608.png"
-                        alt="Bulma: a modern CSS framework based on Flexbox" /></a>
+            <div class="navbar-brand"><a class="navbar-item" href="index.html"><img src="images/lanankeyan.png" /></a>
+
                 <div class="navbar-burger burger" data-target="navMenu"><span></span><span></span><span></span></div>
             </div>
             <div class="navbar-menu" id="navMenu">
@@ -33,7 +32,7 @@
 
                     <a class="navbar-item" href="core.html">
                         核心优势
-                    </a> 
+                    </a>
 
                     <!-- <a class="navbar-item" href="research.html">
                         科研项目
@@ -294,27 +293,27 @@
 
 <!-- Initialize Swiper -->
 <script>
- document.addEventListener('DOMContentLoaded', () => {
+    document.addEventListener('DOMContentLoaded', () => {
 
-// Get all "navbar-burger" elements
-const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+        // Get all "navbar-burger" elements
+        const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
 
-// Add a click event on each of them
-$navbarBurgers.forEach(el => {
-    el.addEventListener('click', () => {
+        // Add a click event on each of them
+        $navbarBurgers.forEach(el => {
+            el.addEventListener('click', () => {
 
-        // Get the target from the "data-target" attribute
-        const target = el.dataset.target;
-        const $target = document.getElementById(target);
+                // Get the target from the "data-target" attribute
+                const target = el.dataset.target;
+                const $target = document.getElementById(target);
 
-        // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
-        el.classList.toggle('is-active');
-        $target.classList.toggle('is-active');
+                // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+                el.classList.toggle('is-active');
+                $target.classList.toggle('is-active');
+
+            });
+        });
 
     });
-});
-
-});
 </script>
 <style>
     .mt-8 {
@@ -350,13 +349,14 @@ $navbarBurgers.forEach(el => {
 
 
     .navbar-menu {
-   
-   background-color: #1e55c8;
- 
-}
-.navbar-burger {
-   color: white;
-}
+
+        background-color: #1e55c8;
+
+    }
+
+    .navbar-burger {
+        color: white;
+    }
 
 
     .navbar {
