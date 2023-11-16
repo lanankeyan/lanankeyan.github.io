@@ -1,14 +1,18 @@
 <!DOCTYPE html>
-
 <html lang="en">
 
 <head>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
     <meta charset="utf-8" />
-    <title>Course Description</title>
+    <title>
+        Course Description
+    </title>
     <style>
         /* Add your CSS styling here */
         body {
             font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+
         }
 
         .container {
@@ -22,81 +26,102 @@
             padding: 20px;
         }
 
+
         .section {
-            background-color: #f2f2f2;
-            margin: 20px 0;
+            background-color: white;
+            /* border: 1px solid #ddd; */
+            margin: 15px 0;
             padding: 20px;
         }
 
-        .section h2 {
+        .section>h2 {
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
             color: #003366;
         }
 
-        .instructor-container {
-            display: flex;
-            /* Use flexbox for layout */
-            background-color: #f2f2f2;
+        .list-item {
+            margin-bottom: 10px;
+        }
+
+        .icon {
+            background-color: #007bff;
+            color: white;
+            border-radius: 50%;
+            padding: 10px;
+            display: inline-block;
+        }
+
+        /* CSS for 实训安排 (Practical Training Arrangement) */
+        .practical-training {
+            background-color: #e6f7ff;
+            border: 1px solid #91d5ff;
+            margin: 15px;
             padding: 20px;
-            flex-direction: column;
-            align-items: center;
-            /* Align items vertically */
-            justify-content: space-between;
-            /* Add space between the two columns */
         }
 
-        .instructor-profile {
-            display: flex;
-            /* Use flexbox for profile layout */
-            align-items: center;
-            /* Align items vertically */
+        .practical-training h2 {
+            border-bottom: 1px solid #91d5ff;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
         }
 
-        .text-content {
-            margin-right: 20px;
-            /* Add some space between text and image */
+        /* CSS for 项目收获 (Project Harvest) */
+        .project-harvest {
+            background-color: #fff0f6;
+            border: 1px solid #ffadd2;
+            margin: 15px;
+            padding: 20px;
         }
 
-        /* .instructor-profile img {
-            width: 100px; 
-            height: 100px;
-            border-radius: 50%; 
-        } */
-        .instructor-profile h2,
-        .instructor-profile p {
-            margin: 0;
-            /* Remove default margin */
-            text-align: center;
+        .project-harvest h2 {
+            border-bottom: 1px solid #ffadd2;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
         }
 
-        .instructor-description {
-            flex: 1;
-            /* Allow the description to take up the remaining space */
-            /* padding-left: 20px; Add some padding between columns */
+        @media only screen and (max-width: 600px) {
+            .container {
+                width: 95%;
+                margin: 0 auto;
+            }
+
+            /* Adjusting section padding and margin for smaller screens */
+            .section,
+            .practical-training,
+            .project-harvest {
+                margin: 10px 0;
+                padding: 15px;
+            }
         }
 
 
-
-
-
-
-        /* Syllabus section styling */
-        .syllabus {
+           /* Syllabus section styling */
+           .syllabus {
             background: #fff;
-            border: 1px solid #ddd;
+            /* border: 1px solid #ddd; */
             border-radius: 5px;
             /* padding: 20px; */
             margin: 20px 0;
+
         }
 
         /* Syllabus header */
         .syllabus-header {
             /* background: #003366; */
-            background-color: #f2f2f2;
+            /* background-color: #f2f2f2; */
+            background-color: white;
             /* color: #fff; */
             color: #003366;
 
             padding: 10px 20px;
             border-radius: 5px 5px 0 0;
+        }
+
+        .syllabus-header h2 {
+            padding-bottom: 10px;
+            border-bottom: 1px solid #ddd;
         }
 
         /* List of topics */
@@ -136,46 +161,51 @@
 
 <body>
     <div class="container">
-
         <div class="header">
-            <h1>基于石墨烯核心技术的海水淡化</h1>
-
+            <h1>
+                基于石墨烯核心技术的海水淡化
+            </h1>
             <div>
                 <ul>
-                    <li>开始日期：待定</li>
-                    <li>时间安排：1-3个月</li>
+                    <li>
+                        开始日期：2023年1月12日
+                    </li>
+                    <li>
+                        时间安排：1-3个月
+                    </li>
                 </ul>
             </div>
         </div>
-
         <div class="section">
-            <h2>适合人群</h2>
-
+            <h2>
+                适合人群
+            </h2>
             <div>
                 <ul>
                     <li>
                         适合年级：大学生及以上
                     </li>
-                    <li>适合专业：高分子与石墨烯</li>
-
+                    <li>
+                        适合专业：高分子材料
+                    </li>
                 </ul>
             </div>
         </div>
-
-
-
-        <div class="section">
-            <h2>讲师介绍</h2>
+        <div class="section" style="background-color: #e5f5ff;">
+            <h2>
+                讲师介绍
+            </h2>
             <div class="instructor-container">
-
                 <div class="instructor-profile">
                     <div class="text-content">
-                        <h2>G老师</h2>
-                        <p>院士、国千、教授</p>
+                        <h2>
+                            G老师
+                        </h2>
+                        <p>
+                            院士、国千、教授
+                        </p>
                     </div>
-
                 </div>
-
                 <div class="instructor-description">
                     <p>
                         俄罗斯自然科学院美籍院士，国家特聘专家，上合组织高级顾问，德国洪堡学者，985大学博士生导师，曾任美国阿克伦大学高分子科学和工程学院核磁共振中心主任、中石化集团北京化工研究院首席专家。先后在三个国家七个顶级单位一直从事高分子材料以及核磁共振的研究，主持和参与60多项国际商业化工程和基础项目的研发，2004年起任国家基金委面上项目评审专家，2012年起任教育部长江学者特聘教授评审专家，2013至今任国家自然科学基金重大项目、重点项目、优秀青年评审专家，现任国家级人才评审专家及召集人，科技部项目评审专家，人社部创业导师，工信部中国制造2025应用技术人才培养工程特聘讲师。
@@ -183,58 +213,73 @@
                 </div>
             </div>
         </div>
-
         <div class="section">
-            <h2>实验室介绍</h2>
-            <p><b>之江实验室：</b>之江实验室（Zhejiang
+            <h2>
+                实验室介绍
+            </h2>
+            <p>
+                <b>
+                    之江实验室：
+                </b>
+                之江实验室（Zhejiang
                 Lab），成立于2017年9月，坐落于杭州城西科创大走廊核心地带，是由浙江省人民政府主导举办、浙江大学等院校支撑、企业参与的事业单位性质的新型研发机构，是浙江深入实施创新驱动发展战略、探索新型举国体制浙江路径的重大科技创新平台
                 。2020年7月，之江实验室获批牵头建设智能科学与技术浙江省实验室。2021年6月，之江实验室纳入国家实验室体系 。之江实验室正式成为浦江（人工智能）国家实验室基地
                 之一。之江实验室以“打造国家战略科技力量”为使命，主攻智能感知、人工智能、智能计算、智能网络和智能系统五大科研方向，重点开展前沿基础研究、关键技术攻关和重大装备系统研发，致力于建设国际一流的智能感知研究与实验中心、国际一流的人工智能创新中心、国际一流的智能科学与技术研究中心和全球领先的智能计算基础研究与创新高地
-                。</p>
+                。
+            </p>
         </div>
-
-
-
         <div class="syllabus">
             <div class="syllabus-header">
-                <h2>实训安排</h2>
+                <h2>
+                    实训安排
+                </h2>
             </div>
             <ul class="syllabus-list">
-                <li>第一周：明确课题内容，线下实验室试验内容，实验室的试验规范，查询文献的方法，阅读文献的方法。</li>
-                <li>第二周：线下实验室跟随大牛导师进行试验，教授指导具体的试验规范，指导具体的写作技巧。</li>
-                <li>第三周：线上导师指导论文写作。</li>
-                <li>第四周：学生可以自由和导师约课，指导学生投稿。</li>
-
+                <li>
+                    第一周：明确课题内容，线下实验室试验内容，实验室的试验规范，查询文献的方法，阅读文献的方法。
+                </li>
+                <li>
+                    第二周：线下实验室跟随大牛导师进行试验，教授指导具体的试验规范，指导具体的写作技巧。
+                </li>
+                <li>
+                    第三周：线上导师指导论文写作。
+                </li>
+                <li>
+                    第四周：学生可以自由和导师约课，指导学生投稿。
+                </li>
             </ul>
         </div>
-
         <div class="syllabus">
             <div class="syllabus-header">
-                <h2>项目收获</h2>
+                <h2>
+                    项目收获
+                </h2>
             </div>
-            
-
             <!-- <div> -->
-                <ol class="syllabus-list outcome">
-                    
-                    <li>
-                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAMAAADW3miqAAAAxlBMVEUAAAAANlkANlkANlkANlkANlkANlkANlkANlkANlkANlkANlkANlkANlkANlkANlkANlkANlkANlkANlkANlkANlkANlkANlkANlkANlkANln////e5eq/zdXT3eMWR2f7/PyIobLi6OzJ1NyFn7Dy9ffX4OV9mat5lahoiJ1df5X4+frq7vHL1t1Mc4vb4+jQ2uC7ytO3xtCitsOWrLuTqrmOprZsi6AqV3QfTm309vjF0dmcsb9lhptZfJM0X3sOQWILP2D3T27NAAAAGnRSTlMA2EMgFAjszsjFpFpo+NXKmpb59OjBoWRUaQFjkYUAAAFbSURBVDjLjdPZdoIwEIDhwciOInXtRAVFWvd97d73f6mmRyBDRe13wdV/ziRzAlCs2XBr1WrNbTQZ5GvVkai34FKhjH+UC5ClepjDU4EoGpjLKJJGwSuUtFINvMpIJnp4gxffC28635Hcfd+NrT7lJkCwZTPi7RifYsoWkYmpXYCxIceUCcBQ6qXRPkCJgUOjCDd9oe2PaOSARaMX3M3CcBb6BxpZoNOIY2xLIx00Gk1w3BsIX/TgqMEDJuanQ4Rr/uv0PsU5JkokmvDJQm6McxmRcdPVkneO5zUFfL2U48jB+Rg/Ih4ev4ecb3yckYNbMnoWn3FfDHrzEf0nsoLHbCSygUgykQOMRhKNGIB5LzLpU+EjpLr0qYCCZ0HUIcJkT0rm+c5f28RiS56vUMEbKv/+pe7/nGnlYi63CIRayT2PClkF5WJUAS7ZJhKmDfmYY+laqaTplsOA+AHwBWwcBNcR1QAAAABJRU5ErkJggg==">
-                        国际会议线下一周名校实验室/著名科研机构实习经历
-                    </li>
-                    <li>
-                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAMAAADW3miqAAAA9lBMVEUAAAAANlkANlkANlkANlkANlkANlkANlkANlkANlkANlkANlkANlkANlkANlkANlkANlkANlkANlkANlkANlkANlkANlkANlkANlkANlkANlkANlkANlkANlkANln////Q2uDG0tqZr71egJbBztcDOVvz9vfp7fDS3OK0xM+nusaFn7CBm61Ye5JLcYodTWwOQWL4+frt8fTk6u7a4ufW3+S+zNW6ydKvwMujt8OdssB2k6ZykKNrip9qip5mhptSd49OdIxBaYMyXnrK1d24x9GqvMiSqriOprWKo7M8ZYA3YX0qV3UlU3EURmb+/v7e5erd5Ok9+nCDAAAAHnRSTlMAxSIVCf3ZzKRo+OzJmtZcWNCdSETt2s6pbPrrRkNGu2+PAAABv0lEQVQ4y4WT6VbiQBCFKyExCWEXt1mqs7HvyC4gjLujzsz7v8ykpU2qNej3o8+te+6hU9UUUNSz0+KRrh8VT89USCavIEHJJ0QOj/Edx4cgo5UwgZIGhJSBiRgpkjnAPRxEKc3AvWTebizhJ2RFX5Lp39SCZZ8YP4BDPuj33Bl5m4f6+KYTfxbPFFBQuRyfe1vkXLUc1nwWfgEAlCi0GjmPQj8H9VZPaAVAJZc93dWFnDmxratgxdX26r4p5F0DYyww4+JifX8r5GJKQiYUSff+ciJko0lCJ2Aj4XEoxPWSuDZ8Q8p5ezcC1iNmGtJI+cW64dlhTZRCNkr4zNt4zJW873Ai1f0LxgLGZpJpgEnLdm3iuy9O93Z4KY3AIpVb62L3X6XuY2cwpcNU9ahoDHl/K9xUw3trbvws5IG3rBK2NwhVdR0erB0/MOSjyx74seDv85dPoyr81wXMiYK1+PHC5SCc5Yrt7Bxwym+tXY/nrarTw77LFrORs97ZP+GVbPTXnAdTFjx5fyYNryMvAmiZr1fq6+UUqcye30kBQcsmLqYGMuXc+0iuDB8pKDpZEaUAyaiWadjptG2Ylkr9/7rggVn6w14OAAAAAElFTkSuQmCC">
-                        名校导师推荐信</li>
-                    <li>
-                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAMAAADW3miqAAAAulBMVEUAAAAANlkANlkANlkANlkANlkANlkANlkANlkANlkANlkANlkANlkANlkANlkANlkANlkANlkANlkANlkANln////x9PZ+mauXrbv4+frr7/KBnK3t8fTk6u5nh5xMcYsuWncTRWXJ1Ny4x9GZr71vjaFFbIY2YXzg5+vc4+i8ytOzw86uv8qKo7OFn7A+Z4InVXMIPV/d5OnX3+XN2N7H09vBzteousahtcKgtMGUq7l3lKZWepEbS2usAoiEAAAAFHRSTlMAyuyjmmdYQyEV2Nb59s/FwgoIEzZXm0QAAAFBSURBVDjLldTXcsIwEAVQuYFppuSuAWEMpoSeQHr9/99KIDuSYAwi58kzvg/SaneFKQw8x63VXMcLQpGv0IChUciJFCs4USmeRFo+cvgtM1NykMspGZkyziirVNPBWU6TQz4u8PleuOjvjmVcVDnUEBb7qtb5+36ZxKbFin/UhQjBiNofk8mkw3pLAgtFABZTGyapQoHwwBYpjaEMaTUF80QERllGI7AZjZGCRcIF6w7wTY98CXoF7sBcUVWhWyCTz/g1oA6AHlj1OISM4n1G4jjkmqGdXD/1p7RJ3syQKyLjTOj2gTml2NK7caZIl4C2kPJws0MFOvhUJdDF7A9HXbNOvS9dzFCFkhEMu/gBLNQPnNBm2tbSMakH1q0ye5Fkmq91q9ib7vr2tQ+CfaSuGk77mN/8d2HYV499iV21Dn8Ave1UtemNx1sAAAAASUVORK5CYII=">
-                        实习证明（主导师签字，可用于申请，支持被调）</li>
-                    <li>
-                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAMAAADW3miqAAAAwFBMVEUAAAAANlkANlkANlkANlkANlkANlkANlkANlkANlkANlkANlkANlkANlkANlkANlkANlkANlkANlkANlkANlkANlkANlkANln///8gT25AaIPAzdaQqLdwjqLQ2uAKPmBggpcZSmry9fft8fPj6ey6yNKwwczN2N+luMWds8CFn7BkhZo9ZoEQQ2QBN1r7/Pzo7fDX3+V9map1kqVafZRPdI00X3suWnfc4+jS3OLH09uxwsyKo7N4ladnh5w3YX2V74ZPAAAAF3RSTlMAyuujQyEJFdaa+PTPxcJoZllW2NeXE5GjEzwAAAFMSURBVDjLjZTncoJAFEYXEOxdc5eihBZ7b+l5/7fKjoLzURTOD2YYznB3b2OI2lEkuV6XJaWjsmx6LQJavQylVKEElVJC0aqUwVBDpyxRJlIZnD49oH+3NIkeIkURq/SEangvesrtjoPw7YsjWz3KBBN0KYQfDWD8SiFdITXvkk6AeZeaol4EkhkyR4lU1kbJClnEpDZTKC8cKayB0uiKk5AaTEZpfOW81h0CZFZLhzvvOA9Aq8UlXWCvvOllOflcgxQLxwWnw058dzZLCNdI/WlmkeBjAQdPp2AeiIftniAF7eTtjD1fkD3jBiRTTebp4lnu1vWnJpQlVeC9ab9PJ6OVt4wKjK2ymYmqHVYun3i24c/9IGoVbLrfN4HlHA3+Q2T6fyNounT7BjaR8Q3tmz8IhUYqfzgH5QJj/sIAbZi/MPJXT/4SK7QO/wEjlGG9bNn+/QAAAABJRU5ErkJggg==">
-                        论文产出，EI/CPCI国际会议论文/SCI论文</li>
-                </ol>
+            <ol class="syllabus-list outcome">
+                <li>
+                    <img
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAMAAADW3miqAAAAxlBMVEUAAAAANlkANlkANlkANlkANlkANlkANlkANlkANlkANlkANlkANlkANlkANlkANlkANlkANlkANlkANlkANlkANlkANlkANlkANlkANlkANln////e5eq/zdXT3eMWR2f7/PyIobLi6OzJ1NyFn7Dy9ffX4OV9mat5lahoiJ1df5X4+frq7vHL1t1Mc4vb4+jQ2uC7ytO3xtCitsOWrLuTqrmOprZsi6AqV3QfTm309vjF0dmcsb9lhptZfJM0X3sOQWILP2D3T27NAAAAGnRSTlMA2EMgFAjszsjFpFpo+NXKmpb59OjBoWRUaQFjkYUAAAFbSURBVDjLjdPZdoIwEIDhwciOInXtRAVFWvd97d73f6mmRyBDRe13wdV/ziRzAlCs2XBr1WrNbTQZ5GvVkai34FKhjH+UC5ClepjDU4EoGpjLKJJGwSuUtFINvMpIJnp4gxffC28635Hcfd+NrT7lJkCwZTPi7RifYsoWkYmpXYCxIceUCcBQ6qXRPkCJgUOjCDd9oe2PaOSARaMX3M3CcBb6BxpZoNOIY2xLIx00Gk1w3BsIX/TgqMEDJuanQ4Rr/uv0PsU5JkokmvDJQm6McxmRcdPVkneO5zUFfL2U48jB+Rg/Ih4ev4ecb3yckYNbMnoWn3FfDHrzEf0nsoLHbCSygUgykQOMRhKNGIB5LzLpU+EjpLr0qYCCZ0HUIcJkT0rm+c5f28RiS56vUMEbKv/+pe7/nGnlYi63CIRayT2PClkF5WJUAS7ZJhKmDfmYY+laqaTplsOA+AHwBWwcBNcR1QAAAABJRU5ErkJggg==" />
+                    国际会议线下一周名校实验室/著名科研机构实习经历
+                </li>
+                <li>
+                    <img
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAMAAADW3miqAAAA9lBMVEUAAAAANlkANlkANlkANlkANlkANlkANlkANlkANlkANlkANlkANlkANlkANlkANlkANlkANlkANlkANlkANlkANlkANlkANlkANlkANlkANlkANlkANlkANlkANln////Q2uDG0tqZr71egJbBztcDOVvz9vfp7fDS3OK0xM+nusaFn7CBm61Ye5JLcYodTWwOQWL4+frt8fTk6u7a4ufW3+S+zNW6ydKvwMujt8OdssB2k6ZykKNrip9qip5mhptSd49OdIxBaYMyXnrK1d24x9GqvMiSqriOprWKo7M8ZYA3YX0qV3UlU3EURmb+/v7e5erd5Ok9+nCDAAAAHnRSTlMAxSIVCf3ZzKRo+OzJmtZcWNCdSETt2s6pbPrrRkNGu2+PAAABv0lEQVQ4y4WT6VbiQBCFKyExCWEXt1mqs7HvyC4gjLujzsz7v8ykpU2qNej3o8+te+6hU9UUUNSz0+KRrh8VT89USCavIEHJJ0QOj/Edx4cgo5UwgZIGhJSBiRgpkjnAPRxEKc3AvWTebizhJ2RFX5Lp39SCZZ8YP4BDPuj33Bl5m4f6+KYTfxbPFFBQuRyfe1vkXLUc1nwWfgEAlCi0GjmPQj8H9VZPaAVAJZc93dWFnDmxratgxdX26r4p5F0DYyww4+JifX8r5GJKQiYUSff+ciJko0lCJ2Aj4XEoxPWSuDZ8Q8p5ezcC1iNmGtJI+cW64dlhTZRCNkr4zNt4zJW873Ai1f0LxgLGZpJpgEnLdm3iuy9O93Z4KY3AIpVb62L3X6XuY2cwpcNU9ahoDHl/K9xUw3trbvws5IG3rBK2NwhVdR0erB0/MOSjyx74seDv85dPoyr81wXMiYK1+PHC5SCc5Yrt7Bxwym+tXY/nrarTw77LFrORs97ZP+GVbPTXnAdTFjx5fyYNryMvAmiZr1fq6+UUqcye30kBQcsmLqYGMuXc+0iuDB8pKDpZEaUAyaiWadjptG2Ylkr9/7rggVn6w14OAAAAAElFTkSuQmCC" />
+                    名校导师推荐信
+                </li>
+                <li>
+                    <img
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAMAAADW3miqAAAAulBMVEUAAAAANlkANlkANlkANlkANlkANlkANlkANlkANlkANlkANlkANlkANlkANlkANlkANlkANlkANlkANlkANln////x9PZ+mauXrbv4+frr7/KBnK3t8fTk6u5nh5xMcYsuWncTRWXJ1Ny4x9GZr71vjaFFbIY2YXzg5+vc4+i8ytOzw86uv8qKo7OFn7A+Z4InVXMIPV/d5OnX3+XN2N7H09vBzteousahtcKgtMGUq7l3lKZWepEbS2usAoiEAAAAFHRSTlMAyuyjmmdYQyEV2Nb59s/FwgoIEzZXm0QAAAFBSURBVDjLldTXcsIwEAVQuYFppuSuAWEMpoSeQHr9/99KIDuSYAwi58kzvg/SaneFKQw8x63VXMcLQpGv0IChUciJFCs4USmeRFo+cvgtM1NykMspGZkyziirVNPBWU6TQz4u8PleuOjvjmVcVDnUEBb7qtb5+36ZxKbFin/UhQjBiNofk8mkw3pLAgtFABZTGyapQoHwwBYpjaEMaTUF80QERllGI7AZjZGCRcIF6w7wTY98CXoF7sBcUVWhWyCTz/g1oA6AHlj1OISM4n1G4jjkmqGdXD/1p7RJ3syQKyLjTOj2gTml2NK7caZIl4C2kPJws0MFOvhUJdDF7A9HXbNOvS9dzFCFkhEMu/gBLNQPnNBm2tbSMakH1q0ye5Fkmq91q9ib7vr2tQ+CfaSuGk77mN/8d2HYV499iV21Dn8Ave1UtemNx1sAAAAASUVORK5CYII=" />
+                    实习证明（主导师签字，可用于申请，支持被调）
+                </li>
+                <li>
+                    <img
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAMAAADW3miqAAAAwFBMVEUAAAAANlkANlkANlkANlkANlkANlkANlkANlkANlkANlkANlkANlkANlkANlkANlkANlkANlkANlkANlkANlkANlkANlkANln///8gT25AaIPAzdaQqLdwjqLQ2uAKPmBggpcZSmry9fft8fPj6ey6yNKwwczN2N+luMWds8CFn7BkhZo9ZoEQQ2QBN1r7/Pzo7fDX3+V9map1kqVafZRPdI00X3suWnfc4+jS3OLH09uxwsyKo7N4ladnh5w3YX2V74ZPAAAAF3RSTlMAyuujQyEJFdaa+PTPxcJoZllW2NeXE5GjEzwAAAFMSURBVDjLjZTncoJAFEYXEOxdc5eihBZ7b+l5/7fKjoLzURTOD2YYznB3b2OI2lEkuV6XJaWjsmx6LQJavQylVKEElVJC0aqUwVBDpyxRJlIZnD49oH+3NIkeIkURq/SEangvesrtjoPw7YsjWz3KBBN0KYQfDWD8SiFdITXvkk6AeZeaol4EkhkyR4lU1kbJClnEpDZTKC8cKayB0uiKk5AaTEZpfOW81h0CZFZLhzvvOA9Aq8UlXWCvvOllOflcgxQLxwWnw058dzZLCNdI/WlmkeBjAQdPp2AeiIftniAF7eTtjD1fkD3jBiRTTebp4lnu1vWnJpQlVeC9ab9PJ6OVt4wKjK2ymYmqHVYun3i24c/9IGoVbLrfN4HlHA3+Q2T6fyNounT7BjaR8Q3tmz8IhUYqfzgH5QJj/sIAbZi/MPJXT/4SK7QO/wEjlGG9bNn+/QAAAABJRU5ErkJggg==" />
+                    论文产出，EI/CPCI国际会议论文/SCI论文
+                </li>
+            </ol>
             <!-- </div> -->
         </div>
-
-
     </div>
 </body>
 
